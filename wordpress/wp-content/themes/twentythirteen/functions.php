@@ -24,6 +24,12 @@
  * @since Twenty Thirteen 1.0
  */
 
+function blug_event_func( $atts ){
+	return array_join(",",$atts);
+}
+add_shortcode( 'blug_event', 'blug_event_func' );
+
+
 /**
  * Sets up the content width value based on the theme's design.
  * @see twentythirteen_content_width() for template-specific adjustments.
