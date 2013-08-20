@@ -25,7 +25,7 @@
  */
 
 function blug_event_func( $atts ){
-	return array_join(",",$atts);
+	return join(",",$atts);
 }
 add_shortcode( 'blug_event', 'blug_event_func' );
 
